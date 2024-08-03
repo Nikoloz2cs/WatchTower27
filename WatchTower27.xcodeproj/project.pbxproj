@@ -46,7 +46,6 @@
 		134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTower27UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27UITests.swift; sourceTree = "<group>"; };
 		134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		134FE9F82C5EA12A00D8D6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		134FE9F92C5EB7BD00D8D6EA /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 		134FE9FB2C5ED45400D8D6EA /* SharedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +98,6 @@
 		134FE9CB2C5E9B2C00D8D6EA /* WatchTower27 */ = {
 			isa = PBXGroup;
 			children = (
-				134FE9F82C5EA12A00D8D6EA /* Info.plist */,
 				134FE9CC2C5E9B2C00D8D6EA /* WatchTower27App.swift */,
 				134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */,
 				134FE9F92C5EB7BD00D8D6EA /* ParkingLot.swift */,
