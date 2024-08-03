@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134FE9CD2C5E9B2C00D8D6EA /* WatchTower27App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9CC2C5E9B2C00D8D6EA /* WatchTower27App.swift */; };
+		134FE9CF2C5E9B2C00D8D6EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */; };
+		134FE9D12C5E9B2E00D8D6EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134FE9D02C5E9B2E00D8D6EA /* Assets.xcassets */; };
+		134FE9D42C5E9B2E00D8D6EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134FE9D32C5E9B2E00D8D6EA /* Preview Assets.xcassets */; };
+		134FE9DE2C5E9B2E00D8D6EA /* WatchTower27Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9DD2C5E9B2E00D8D6EA /* WatchTower27Tests.swift */; };
+		134FE9E82C5E9B2E00D8D6EA /* WatchTower27UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */; };
+		134FE9EA2C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134FE9DA2C5E9B2E00D8D6EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134FE9C12C5E9B2C00D8D6EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134FE9C82C5E9B2C00D8D6EA;
+			remoteInfo = WatchTower27;
+		};
+		134FE9E42C5E9B2E00D8D6EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134FE9C12C5E9B2C00D8D6EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134FE9C82C5E9B2C00D8D6EA;
+			remoteInfo = WatchTower27;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		134FE9C92C5E9B2C00D8D6EA /* WatchTower27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTower27.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		134FE9CC2C5E9B2C00D8D6EA /* WatchTower27App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27App.swift; sourceTree = "<group>"; };
+		134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		134FE9D02C5E9B2E00D8D6EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		134FE9D32C5E9B2E00D8D6EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		134FE9D92C5E9B2E00D8D6EA /* WatchTower27Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTower27Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		134FE9DD2C5E9B2E00D8D6EA /* WatchTower27Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27Tests.swift; sourceTree = "<group>"; };
+		134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTower27UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27UITests.swift; sourceTree = "<group>"; };
+		134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		134FE9C62C5E9B2C00D8D6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134FE9D62C5E9B2E00D8D6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134FE9E02C5E9B2E00D8D6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134FE9C02C5E9B2C00D8D6EA = {
+			isa = PBXGroup;
+			children = (
+				134FE9CB2C5E9B2C00D8D6EA /* WatchTower27 */,
+				134FE9DC2C5E9B2E00D8D6EA /* WatchTower27Tests */,
+				134FE9E62C5E9B2E00D8D6EA /* WatchTower27UITests */,
+				134FE9CA2C5E9B2C00D8D6EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		134FE9CA2C5E9B2C00D8D6EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134FE9C92C5E9B2C00D8D6EA /* WatchTower27.app */,
+				134FE9D92C5E9B2E00D8D6EA /* WatchTower27Tests.xctest */,
+				134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		134FE9CB2C5E9B2C00D8D6EA /* WatchTower27 */ = {
+			isa = PBXGroup;
+			children = (
+				134FE9CC2C5E9B2C00D8D6EA /* WatchTower27App.swift */,
+				134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */,
+				134FE9D02C5E9B2E00D8D6EA /* Assets.xcassets */,
+				134FE9D22C5E9B2E00D8D6EA /* Preview Content */,
+			);
+			path = WatchTower27;
+			sourceTree = "<group>";
+		};
+		134FE9D22C5E9B2E00D8D6EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				134FE9D32C5E9B2E00D8D6EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		134FE9DC2C5E9B2E00D8D6EA /* WatchTower27Tests */ = {
+			isa = PBXGroup;
+			children = (
+				134FE9DD2C5E9B2E00D8D6EA /* WatchTower27Tests.swift */,
+			);
+			path = WatchTower27Tests;
+			sourceTree = "<group>";
+		};
+		134FE9E62C5E9B2E00D8D6EA /* WatchTower27UITests */ = {
+			isa = PBXGroup;
+			children = (
+				134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */,
+				134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */,
+			);
+			path = WatchTower27UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134FE9ED2C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27" */;
+			buildPhases = (
+				134FE9C52C5E9B2C00D8D6EA /* Sources */,
+				134FE9C62C5E9B2C00D8D6EA /* Frameworks */,
+				134FE9C72C5E9B2C00D8D6EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchTower27;
+			productName = WatchTower27;
+			productReference = 134FE9C92C5E9B2C00D8D6EA /* WatchTower27.app */;
+			productType = "com.apple.product-type.application";
+		};
+		134FE9D82C5E9B2E00D8D6EA /* WatchTower27Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134FE9F02C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27Tests" */;
+			buildPhases = (
+				134FE9D52C5E9B2E00D8D6EA /* Sources */,
+				134FE9D62C5E9B2E00D8D6EA /* Frameworks */,
+				134FE9D72C5E9B2E00D8D6EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134FE9DB2C5E9B2E00D8D6EA /* PBXTargetDependency */,
+			);
+			name = WatchTower27Tests;
+			productName = WatchTower27Tests;
+			productReference = 134FE9D92C5E9B2E00D8D6EA /* WatchTower27Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		134FE9E22C5E9B2E00D8D6EA /* WatchTower27UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134FE9F32C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27UITests" */;
+			buildPhases = (
+				134FE9DF2C5E9B2E00D8D6EA /* Sources */,
+				134FE9E02C5E9B2E00D8D6EA /* Frameworks */,
+				134FE9E12C5E9B2E00D8D6EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134FE9E52C5E9B2E00D8D6EA /* PBXTargetDependency */,
+			);
+			name = WatchTower27UITests;
+			productName = WatchTower27UITests;
+			productReference = 134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134FE9C12C5E9B2C00D8D6EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					134FE9C82C5E9B2C00D8D6EA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					134FE9D82C5E9B2E00D8D6EA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 134FE9C82C5E9B2C00D8D6EA;
+					};
+					134FE9E22C5E9B2E00D8D6EA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 134FE9C82C5E9B2C00D8D6EA;
+					};
+				};
+			};
+			buildConfigurationList = 134FE9C42C5E9B2C00D8D6EA /* Build configuration list for PBXProject "WatchTower27" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 134FE9C02C5E9B2C00D8D6EA;
+			productRefGroup = 134FE9CA2C5E9B2C00D8D6EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */,
+				134FE9D82C5E9B2E00D8D6EA /* WatchTower27Tests */,
+				134FE9E22C5E9B2E00D8D6EA /* WatchTower27UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134FE9C72C5E9B2C00D8D6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134FE9D42C5E9B2E00D8D6EA /* Preview Assets.xcassets in Resources */,
+				134FE9D12C5E9B2E00D8D6EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134FE9D72C5E9B2E00D8D6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134FE9E12C5E9B2E00D8D6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134FE9C52C5E9B2C00D8D6EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134FE9CF2C5E9B2C00D8D6EA /* ContentView.swift in Sources */,
+				134FE9CD2C5E9B2C00D8D6EA /* WatchTower27App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134FE9D52C5E9B2E00D8D6EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134FE9DE2C5E9B2E00D8D6EA /* WatchTower27Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134FE9DF2C5E9B2E00D8D6EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134FE9E82C5E9B2E00D8D6EA /* WatchTower27UITests.swift in Sources */,
+				134FE9EA2C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		134FE9DB2C5E9B2E00D8D6EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */;
+			targetProxy = 134FE9DA2C5E9B2E00D8D6EA /* PBXContainerItemProxy */;
+		};
+		134FE9E52C5E9B2E00D8D6EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */;
+			targetProxy = 134FE9E42C5E9B2E00D8D6EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		134FE9EB2C5E9B2E00D8D6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		134FE9EC2C5E9B2E00D8D6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		134FE9EE2C5E9B2E00D8D6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchTower27/Preview Content\"";
+				DEVELOPMENT_TEAM = P8RUFAZP3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		134FE9EF2C5E9B2E00D8D6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchTower27/Preview Content\"";
+				DEVELOPMENT_TEAM = P8RUFAZP3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		134FE9F12C5E9B2E00D8D6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8RUFAZP3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTower27.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchTower27";
+			};
+			name = Debug;
+		};
+		134FE9F22C5E9B2E00D8D6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8RUFAZP3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTower27.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchTower27";
+			};
+			name = Release;
+		};
+		134FE9F42C5E9B2E00D8D6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8RUFAZP3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchTower27;
+			};
+			name = Debug;
+		};
+		134FE9F52C5E9B2E00D8D6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8RUFAZP3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchTower27;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		134FE9C42C5E9B2C00D8D6EA /* Build configuration list for PBXProject "WatchTower27" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134FE9EB2C5E9B2E00D8D6EA /* Debug */,
+				134FE9EC2C5E9B2E00D8D6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134FE9ED2C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134FE9EE2C5E9B2E00D8D6EA /* Debug */,
+				134FE9EF2C5E9B2E00D8D6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134FE9F02C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134FE9F12C5E9B2E00D8D6EA /* Debug */,
+				134FE9F22C5E9B2E00D8D6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134FE9F32C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134FE9F42C5E9B2E00D8D6EA /* Debug */,
+				134FE9F52C5E9B2E00D8D6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 134FE9C12C5E9B2C00D8D6EA /* Project object */;
+}
