@@ -11,29 +11,18 @@
 		134FE9CF2C5E9B2C00D8D6EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */; };
 		134FE9D12C5E9B2E00D8D6EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134FE9D02C5E9B2E00D8D6EA /* Assets.xcassets */; };
 		134FE9D42C5E9B2E00D8D6EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134FE9D32C5E9B2E00D8D6EA /* Preview Assets.xcassets */; };
-		134FE9DE2C5E9B2E00D8D6EA /* WatchTower27Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9DD2C5E9B2E00D8D6EA /* WatchTower27Tests.swift */; };
-		134FE9E82C5E9B2E00D8D6EA /* WatchTower27UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */; };
-		134FE9EA2C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */; };
 		134FE9FA2C5EB7BD00D8D6EA /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9F92C5EB7BD00D8D6EA /* ParkingLot.swift */; };
 		134FE9FC2C5ED45400D8D6EA /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FE9FB2C5ED45400D8D6EA /* SharedState.swift */; };
+		134FEA022C5F801C00D8D6EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 134FEA012C5F801C00D8D6EA /* GoogleService-Info.plist */; };
+		134FEA072C5F89A000D8D6EA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 134FEA062C5F89A000D8D6EA /* FirebaseAnalytics */; };
+		134FEA092C5F89A000D8D6EA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 134FEA082C5F89A000D8D6EA /* FirebaseAnalyticsOnDeviceConversion */; };
+		134FEA0B2C5F89A000D8D6EA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 134FEA0A2C5F89A000D8D6EA /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		134FEA0D2C5F89A000D8D6EA /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 134FEA0C2C5F89A000D8D6EA /* FirebaseAppCheck */; };
+		134FEA0F2C5FE26800D8D6EA /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEA0E2C5FE26800D8D6EA /* AuthView.swift */; };
+		134FEA112C5FE29400D8D6EA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEA102C5FE29400D8D6EA /* RootView.swift */; };
+		134FEA132C5FFA5900D8D6EA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 134FEA122C5FFA5900D8D6EA /* FirebaseAuth */; };
+		134FEA152C612CC100D8D6EA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 134FEA142C612CC100D8D6EA /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		134FE9DA2C5E9B2E00D8D6EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 134FE9C12C5E9B2C00D8D6EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 134FE9C82C5E9B2C00D8D6EA;
-			remoteInfo = WatchTower27;
-		};
-		134FE9E42C5E9B2E00D8D6EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 134FE9C12C5E9B2C00D8D6EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 134FE9C82C5E9B2C00D8D6EA;
-			remoteInfo = WatchTower27;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		134FE9C92C5E9B2C00D8D6EA /* WatchTower27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTower27.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,13 +30,11 @@
 		134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		134FE9D02C5E9B2E00D8D6EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		134FE9D32C5E9B2E00D8D6EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		134FE9D92C5E9B2E00D8D6EA /* WatchTower27Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTower27Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		134FE9DD2C5E9B2E00D8D6EA /* WatchTower27Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27Tests.swift; sourceTree = "<group>"; };
-		134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTower27UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27UITests.swift; sourceTree = "<group>"; };
-		134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTower27UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		134FE9F92C5EB7BD00D8D6EA /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 		134FE9FB2C5ED45400D8D6EA /* SharedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedState.swift; sourceTree = "<group>"; };
+		134FEA012C5F801C00D8D6EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		134FEA0E2C5FE26800D8D6EA /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		134FEA102C5FE29400D8D6EA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,20 +42,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		134FE9D62C5E9B2E00D8D6EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		134FE9E02C5E9B2E00D8D6EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				134FEA0D2C5F89A000D8D6EA /* FirebaseAppCheck in Frameworks */,
+				134FEA132C5FFA5900D8D6EA /* FirebaseAuth in Frameworks */,
+				134FEA072C5F89A000D8D6EA /* FirebaseAnalytics in Frameworks */,
+				134FEA0B2C5F89A000D8D6EA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				134FEA092C5F89A000D8D6EA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				134FEA152C612CC100D8D6EA /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				134FE9CB2C5E9B2C00D8D6EA /* WatchTower27 */,
-				134FE9DC2C5E9B2E00D8D6EA /* WatchTower27Tests */,
-				134FE9E62C5E9B2E00D8D6EA /* WatchTower27UITests */,
 				134FE9CA2C5E9B2C00D8D6EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				134FE9C92C5E9B2C00D8D6EA /* WatchTower27.app */,
-				134FE9D92C5E9B2E00D8D6EA /* WatchTower27Tests.xctest */,
-				134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +75,12 @@
 			children = (
 				134FE9CC2C5E9B2C00D8D6EA /* WatchTower27App.swift */,
 				134FE9CE2C5E9B2C00D8D6EA /* ContentView.swift */,
+				134FEA0E2C5FE26800D8D6EA /* AuthView.swift */,
 				134FE9F92C5EB7BD00D8D6EA /* ParkingLot.swift */,
+				134FEA102C5FE29400D8D6EA /* RootView.swift */,
 				134FE9FB2C5ED45400D8D6EA /* SharedState.swift */,
 				134FE9D02C5E9B2E00D8D6EA /* Assets.xcassets */,
+				134FEA012C5F801C00D8D6EA /* GoogleService-Info.plist */,
 				134FE9D22C5E9B2E00D8D6EA /* Preview Content */,
 			);
 			path = WatchTower27;
@@ -114,23 +92,6 @@
 				134FE9D32C5E9B2E00D8D6EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		134FE9DC2C5E9B2E00D8D6EA /* WatchTower27Tests */ = {
-			isa = PBXGroup;
-			children = (
-				134FE9DD2C5E9B2E00D8D6EA /* WatchTower27Tests.swift */,
-			);
-			path = WatchTower27Tests;
-			sourceTree = "<group>";
-		};
-		134FE9E62C5E9B2E00D8D6EA /* WatchTower27UITests */ = {
-			isa = PBXGroup;
-			children = (
-				134FE9E72C5E9B2E00D8D6EA /* WatchTower27UITests.swift */,
-				134FE9E92C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift */,
-			);
-			path = WatchTower27UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,45 +110,17 @@
 			dependencies = (
 			);
 			name = WatchTower27;
+			packageProductDependencies = (
+				134FEA062C5F89A000D8D6EA /* FirebaseAnalytics */,
+				134FEA082C5F89A000D8D6EA /* FirebaseAnalyticsOnDeviceConversion */,
+				134FEA0A2C5F89A000D8D6EA /* FirebaseAnalyticsWithoutAdIdSupport */,
+				134FEA0C2C5F89A000D8D6EA /* FirebaseAppCheck */,
+				134FEA122C5FFA5900D8D6EA /* FirebaseAuth */,
+				134FEA142C612CC100D8D6EA /* FirebaseFirestore */,
+			);
 			productName = WatchTower27;
 			productReference = 134FE9C92C5E9B2C00D8D6EA /* WatchTower27.app */;
 			productType = "com.apple.product-type.application";
-		};
-		134FE9D82C5E9B2E00D8D6EA /* WatchTower27Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 134FE9F02C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27Tests" */;
-			buildPhases = (
-				134FE9D52C5E9B2E00D8D6EA /* Sources */,
-				134FE9D62C5E9B2E00D8D6EA /* Frameworks */,
-				134FE9D72C5E9B2E00D8D6EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				134FE9DB2C5E9B2E00D8D6EA /* PBXTargetDependency */,
-			);
-			name = WatchTower27Tests;
-			productName = WatchTower27Tests;
-			productReference = 134FE9D92C5E9B2E00D8D6EA /* WatchTower27Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		134FE9E22C5E9B2E00D8D6EA /* WatchTower27UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 134FE9F32C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27UITests" */;
-			buildPhases = (
-				134FE9DF2C5E9B2E00D8D6EA /* Sources */,
-				134FE9E02C5E9B2E00D8D6EA /* Frameworks */,
-				134FE9E12C5E9B2E00D8D6EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				134FE9E52C5E9B2E00D8D6EA /* PBXTargetDependency */,
-			);
-			name = WatchTower27UITests;
-			productName = WatchTower27UITests;
-			productReference = 134FE9E32C5E9B2E00D8D6EA /* WatchTower27UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,14 +135,6 @@
 					134FE9C82C5E9B2C00D8D6EA = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					134FE9D82C5E9B2E00D8D6EA = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 134FE9C82C5E9B2C00D8D6EA;
-					};
-					134FE9E22C5E9B2E00D8D6EA = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 134FE9C82C5E9B2C00D8D6EA;
-					};
 				};
 			};
 			buildConfigurationList = 134FE9C42C5E9B2C00D8D6EA /* Build configuration list for PBXProject "WatchTower27" */;
@@ -221,13 +146,14 @@
 				Base,
 			);
 			mainGroup = 134FE9C02C5E9B2C00D8D6EA;
+			packageReferences = (
+				134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 134FE9CA2C5E9B2C00D8D6EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */,
-				134FE9D82C5E9B2E00D8D6EA /* WatchTower27Tests */,
-				134FE9E22C5E9B2E00D8D6EA /* WatchTower27UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,21 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				134FE9D42C5E9B2E00D8D6EA /* Preview Assets.xcassets in Resources */,
+				134FEA022C5F801C00D8D6EA /* GoogleService-Info.plist in Resources */,
 				134FE9D12C5E9B2E00D8D6EA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		134FE9D72C5E9B2E00D8D6EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		134FE9E12C5E9B2E00D8D6EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,43 +177,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				134FE9FC2C5ED45400D8D6EA /* SharedState.swift in Sources */,
+				134FEA0F2C5FE26800D8D6EA /* AuthView.swift in Sources */,
+				134FEA112C5FE29400D8D6EA /* RootView.swift in Sources */,
 				134FE9FA2C5EB7BD00D8D6EA /* ParkingLot.swift in Sources */,
 				134FE9CF2C5E9B2C00D8D6EA /* ContentView.swift in Sources */,
 				134FE9CD2C5E9B2C00D8D6EA /* WatchTower27App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		134FE9D52C5E9B2E00D8D6EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				134FE9DE2C5E9B2E00D8D6EA /* WatchTower27Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		134FE9DF2C5E9B2E00D8D6EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				134FE9E82C5E9B2E00D8D6EA /* WatchTower27UITests.swift in Sources */,
-				134FE9EA2C5E9B2E00D8D6EA /* WatchTower27UITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		134FE9DB2C5E9B2E00D8D6EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */;
-			targetProxy = 134FE9DA2C5E9B2E00D8D6EA /* PBXContainerItemProxy */;
-		};
-		134FE9E52C5E9B2E00D8D6EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 134FE9C82C5E9B2C00D8D6EA /* WatchTower27 */;
-			targetProxy = 134FE9E42C5E9B2E00D8D6EA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		134FE9EB2C5E9B2E00D8D6EA /* Debug */ = {
@@ -340,7 +225,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -403,7 +288,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,6 +310,7 @@
 		134FE9EE2C5E9B2E00D8D6EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +342,7 @@
 		134FE9EF2C5E9B2E00D8D6EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,82 +371,6 @@
 			};
 			name = Release;
 		};
-		134FE9F12C5E9B2E00D8D6EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8RUFAZP3R;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTower27.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchTower27";
-			};
-			name = Debug;
-		};
-		134FE9F22C5E9B2E00D8D6EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8RUFAZP3R;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTower27.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchTower27";
-			};
-			name = Release;
-		};
-		134FE9F42C5E9B2E00D8D6EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8RUFAZP3R;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WatchTower27;
-			};
-			name = Debug;
-		};
-		134FE9F52C5E9B2E00D8D6EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8RUFAZP3R;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NikolozGvelesiani.WatchTower27UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WatchTower27;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,25 +392,51 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		134FE9F02C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				134FE9F12C5E9B2E00D8D6EA /* Debug */,
-				134FE9F22C5E9B2E00D8D6EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		134FE9F32C5E9B2E00D8D6EA /* Build configuration list for PBXNativeTarget "WatchTower27UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				134FE9F42C5E9B2E00D8D6EA /* Debug */,
-				134FE9F52C5E9B2E00D8D6EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		134FEA062C5F89A000D8D6EA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		134FEA082C5F89A000D8D6EA /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		134FEA0A2C5F89A000D8D6EA /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		134FEA0C2C5F89A000D8D6EA /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		134FEA122C5FFA5900D8D6EA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		134FEA142C612CC100D8D6EA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 134FEA052C5F899F00D8D6EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 134FE9C12C5E9B2C00D8D6EA /* Project object */;
 }

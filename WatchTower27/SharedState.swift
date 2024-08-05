@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 class SharedState: ObservableObject {
     @Published var isCooldownActive: Bool = false
+    @Published var alertType: AlertType?
     @Published var showAlert: Bool = false
-    @Published var alertMessage: String = ""
     @Published var showOutOfBoundsAlert: Bool = false
     @Published var isReportingOnBehalf: Bool = false
     @Published var isReportingDisabled: Bool = false
