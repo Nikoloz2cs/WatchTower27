@@ -73,9 +73,11 @@ struct MapView: UIViewRepresentable {
             guard let location = locations.last else { return }
             let userCoordinate = location.coordinate
             
-            if !campusLatitudeRange.contains(userCoordinate.latitude) || !campusLongitudeRange.contains(userCoordinate.longitude) {
+            // Check if the user is out of bounds and if the alert has already been shown
+            if (!campusLatitudeRange.contains(userCoordinate.latitude) || !campusLongitudeRange.contains(userCoordinate.longitude)) && !parent.sharedState.hasShownOutOfBoundsAlert {
                 parent.sharedState.alertType = .outOfBounds("Your location is out of bounds")
                 parent.sharedState.showOutOfBoundsAlert = true
+                parent.sharedState.hasShownOutOfBoundsAlert = true // Set flag to true after showing the alert
             }
         }
         
@@ -147,7 +149,7 @@ struct MapView: UIViewRepresentable {
                   let index = parent.parkingLots.firstIndex(where: { $0.name == title }) else { return }
             
             if parent.sharedState.isCooldownActive {
-                parent.sharedState.alertType = .general("Each user can report once every 5 minutes")
+                parent.sharedState.alertType = .general("Each user can report once every 10 minutes")
                 parent.sharedState.showAlert = true
                 return
             }
@@ -179,10 +181,10 @@ struct MapView: UIViewRepresentable {
                 }
             }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5 * 60) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 10 * 60) {
                 guard let lotIndex = self.parent.parkingLots.firstIndex(where: { $0.id == lot.id }) else { return }
                 self.parent.parkingLots[lotIndex].reportCount -= 1
-                self.parent.parkingLots[lotIndex].recentReports.removeAll(where: { $0 <= Date().addingTimeInterval(-5 * 60) })
+                self.parent.parkingLots[lotIndex].recentReports.removeAll(where: { $0 <= Date().addingTimeInterval(-10 * 60) })
                 
                 db.collection("parkingLots").document(lot.id).updateData([
                     "reportCount": self.parent.parkingLots[lotIndex].reportCount
