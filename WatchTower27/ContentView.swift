@@ -128,16 +128,29 @@ struct MapView: UIViewRepresentable {
             }
             
             if let title = annotation.title ?? "", let lot = parent.parkingLots.first(where: { $0.name == title }) {
-                switch lot.reportCount {
-                case 0:
-                    annotationView?.markerTintColor = .green
-                case 1...3:
-                    annotationView?.markerTintColor = .yellow
-                case 4...6:
-                    annotationView?.markerTintColor = .orange
-                default:
-                    annotationView?.markerTintColor = .red
+                
+                // Highlight the most recently reported parking lot by setting the markerTintColor to silver
+                if let mostRecentLot = parent.parkingLots.max(by: { $0.recentReports.last ?? Date.distantPast < $1.recentReports.last ?? Date.distantPast }) {
+                    if lot == mostRecentLot {
+                        annotationView?.markerTintColor = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
+                    } else {
+                        // Set the marker color based on the report count
+                        switch lot.reportCount {
+                        case 0:
+                            annotationView?.markerTintColor = .green
+                        case 1...3:
+                            annotationView?.markerTintColor = .yellow
+                        case 4...6:
+                            annotationView?.markerTintColor = .orange
+                        default:
+                            annotationView?.markerTintColor = .red
+                        }
+                    }
                 }
+                
+                // Display the reportCount on pins
+                annotationView?.glyphText = "\(lot.reportCount)"
+                annotationView?.glyphTintColor = .systemPurple
             }
             
             return annotationView
@@ -210,29 +223,38 @@ struct ContentView: View {
     @StateObject private var sharedState = SharedState()
 
     var body: some View {
-        MapView(region: $region, parkingLots: $parkingLots)
-            .environmentObject(sharedState)
-            .edgesIgnoringSafeArea(.all)
-            .alert(item: $sharedState.alertType) { alertType in
-                switch alertType {
-                case .general(let message):
-                    return Alert(title: Text("Alert"), message: Text(message), dismissButton: .default(Text("OK")))
-                case .outOfBounds(let message):
-                    return Alert(
-                        title: Text("Out of Bounds"),
-                        message: Text(message),
-                        primaryButton: .default(Text("Ok")) {
-                            sharedState.isReportingDisabled = true
-                        },
-                        secondaryButton: .default(Text("Reporting on behalf of a friend")) {
-                            sharedState.isReportingOnBehalf = true
-                        }
-                    )
+        ZStack(alignment: .topLeading) {
+            // Map View
+            MapView(region: $region, parkingLots: $parkingLots)
+                .environmentObject(sharedState)
+                .edgesIgnoringSafeArea(.all)
+                .alert(item: $sharedState.alertType) { alertType in
+                    switch alertType {
+                    case .general(let message):
+                        return Alert(title: Text("Alert"), message: Text(message), dismissButton: .default(Text("OK")))
+                    case .outOfBounds(let message):
+                        return Alert(
+                            title: Text("Out of Bounds"),
+                            message: Text(message),
+                            primaryButton: .default(Text("Ok")) {
+                                sharedState.isReportingDisabled = true
+                            },
+                            secondaryButton: .default(Text("Reporting on behalf of a friend")) {
+                                sharedState.isReportingOnBehalf = true
+                            }
+                        )
+                    }
                 }
-            }
-            .onAppear {
-                fetchParkingLots()
-            }
+                .onAppear {
+                    fetchParkingLots()
+                }
+
+            // UR logo in top-left corner
+            Image("URSpider")
+                .resizable()
+                .frame(width: 130, height: 65) // Adjust size as needed
+
+        }
     }
 
     private func fetchParkingLots() {
@@ -248,7 +270,7 @@ struct ContentView: View {
     }
 }
 
-//
+
 //#Preview {
 //    ContentView()
 //}

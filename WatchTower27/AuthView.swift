@@ -17,33 +17,46 @@ struct AuthView: View {
 
     var body: some View {
         VStack {
+            Image("URSpider")
+                .resizable()
+                .scaledToFill()
+                .frame(height: 200) // Set the height of the banner
+                .clipped() // Clips the image to ensure it doesn't overflow
+                .edgesIgnoringSafeArea(.top)
+                .offset(y: -110)
+            
             TextField("Email", text: $email)
                 .autocapitalization(.none)
                 .keyboardType(.emailAddress)
                 .padding()
                 .background(Color(.secondarySystemBackground))
                 .cornerRadius(8.0)
+                .offset(y: -110)
 
             SecureField("Password", text: $password)
                 .padding()
                 .background(Color(.secondarySystemBackground))
                 .cornerRadius(8.0)
+                .offset(y: -110)
 
-            Button(action: signUp) {
-                Text("Sign Up")
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(8.0)
-            }
-            .padding(.top, 10)
+            HStack(spacing: 20) { // HStack arranges the buttons horizontally within the Vstack
+                Button(action: signUp) {
+                    Text("Sign Up")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8.0)
+                        .offset(y: -110)
+                }
 
-            Button(action: signIn) {
-                Text("Sign In")
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(8.0)
+                Button(action: signIn) {
+                    Text("Sign In")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.green)
+                        .cornerRadius(8.0)
+                        .offset(y: -110)
+                }
             }
             .padding(.top, 10)
         }
@@ -122,3 +135,7 @@ struct AuthView: View {
     }
 }
 
+
+//#Preview {
+//    AuthView()
+//}

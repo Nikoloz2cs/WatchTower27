@@ -10,7 +10,16 @@ import CoreLocation
 import Firebase
 import FirebaseFirestore
 
-struct ParkingLot: Identifiable {
+struct ParkingLot: Identifiable, Equatable {
+    static func == (lhs: ParkingLot, rhs: ParkingLot) -> Bool {
+        return lhs.id == rhs.id &&
+               lhs.name == rhs.name &&
+               lhs.coordinate.latitude == rhs.coordinate.latitude &&
+               lhs.coordinate.longitude == rhs.coordinate.longitude &&
+               lhs.reportCount == rhs.reportCount &&
+               lhs.recentReports == rhs.recentReports
+    }
+    
     let id: String
     let name: String
     let coordinate: CLLocationCoordinate2D
