@@ -15,5 +15,6 @@ class SharedState: ObservableObject {
     @Published var showOutOfBoundsAlert: Bool = false
     @Published var isReportingOnBehalf: Bool = false
     @Published var isReportingDisabled: Bool = false
+    @Published var locationAccessDenied: Bool = false 
     var hasShownOutOfBoundsAlert = false
 }

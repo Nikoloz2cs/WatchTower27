@@ -69,6 +69,21 @@ struct MapView: UIViewRepresentable {
             locationManager.startUpdatingLocation()
         }
         
+        func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+            switch status {
+            case .authorizedAlways, .authorizedWhenInUse:
+                parent.sharedState.locationAccessDenied = false
+                locationManager.startUpdatingLocation()
+            case .denied, .restricted:
+                parent.sharedState.locationAccessDenied = true
+                parent.sharedState.isReportingDisabled = true // Disable reporting if location access is denied
+                parent.sharedState.alertType = .general("Location access is denied. You cannot make reports without location access.")
+                parent.sharedState.showAlert = true
+            default:
+                break
+            }
+        }
+        
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let location = locations.last else { return }
             let userCoordinate = location.coordinate
@@ -160,6 +175,12 @@ struct MapView: UIViewRepresentable {
             guard let annotation = view.annotation,
                   let title = annotation.title ?? "",
                   let index = parent.parkingLots.firstIndex(where: { $0.name == title }) else { return }
+            
+            if parent.sharedState.locationAccessDenied {
+                parent.sharedState.alertType = .general("Location access is required to make a report. Please enable location services in your device settings.")
+                parent.sharedState.showAlert = true
+                return
+            }
             
             if parent.sharedState.isCooldownActive {
                 parent.sharedState.alertType = .general("Each user can report once every 10 minutes")
@@ -271,6 +292,6 @@ struct ContentView: View {
 }
 
 
-//#Preview {
-//    ContentView()
-//}
+#Preview {
+    ContentView()
+}

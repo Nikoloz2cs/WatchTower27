@@ -20,45 +20,45 @@ struct AuthView: View {
             Image("URSpider")
                 .resizable()
                 .scaledToFill()
-                .frame(height: 200) // Set the height of the banner
-                .clipped() // Clips the image to ensure it doesn't overflow
+                .frame(height: 200)
+                .clipped()
                 .edgesIgnoringSafeArea(.top)
-                .offset(y: -110)
             
-            TextField("Email", text: $email)
-                .autocapitalization(.none)
-                .keyboardType(.emailAddress)
-                .padding()
-                .background(Color(.secondarySystemBackground))
-                .cornerRadius(8.0)
-                .offset(y: -110)
+            VStack(spacing: 20) {
+                TextField("Email", text: $email)
+                    .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                    .cornerRadius(8.0)
 
-            SecureField("Password", text: $password)
-                .padding()
-                .background(Color(.secondarySystemBackground))
-                .cornerRadius(8.0)
-                .offset(y: -110)
+                SecureField("Password", text: $password)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                    .cornerRadius(8.0)
 
-            HStack(spacing: 20) { // HStack arranges the buttons horizontally within the Vstack
-                Button(action: signUp) {
-                    Text("Sign Up")
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(8.0)
-                        .offset(y: -110)
-                }
+                HStack(spacing: 20) {
+                    Button(action: signUp) {
+                        Text("Sign Up")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(8.0)
+                    }
 
-                Button(action: signIn) {
-                    Text("Sign In")
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.green)
-                        .cornerRadius(8.0)
-                        .offset(y: -110)
+                    Button(action: signIn) {
+                        Text("Sign In")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.green)
+                            .cornerRadius(8.0)
+                    }
                 }
             }
-            .padding(.top, 10)
+            .padding()
+            
+            Spacer() // Adds flexible space below the fields and buttons
+                .frame(height: 40)
         }
         .padding()
         .alert(isPresented: $showAlert) {
@@ -81,7 +81,7 @@ struct AuthView: View {
 
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error {
-                errorMessage = error.localizedDescription
+                errorMessage = customErrorMessage(for: error)
                 showAlert = true
                 return
             }
@@ -90,7 +90,7 @@ struct AuthView: View {
 
             user.sendEmailVerification { error in
                 if let error = error {
-                    errorMessage = error.localizedDescription
+                    errorMessage = customErrorMessage(for: error)
                     showAlert = true
                     return
                 }
@@ -104,34 +104,67 @@ struct AuthView: View {
     private func signIn() {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let error = error {
-                errorMessage = error.localizedDescription
+                errorMessage = customErrorMessage(for: error)
                 showAlert = true
                 return
             }
 
             guard let user = authResult?.user else { return }
 
-            // Check if email verification is required using custom claim
             user.getIDTokenResult { tokenResult, error in
                 if let error = error {
-                    errorMessage = error.localizedDescription
+                    errorMessage = customErrorMessage(for: error)
                     showAlert = true
                     return
                 }
 
                 if let tokenResult = tokenResult, let bypassEmailVerification = tokenResult.claims["bypassEmailVerification"] as? Bool, bypassEmailVerification {
-                    // User can bypass email verification
                     isSignedIn = true
                 } else if !user.isEmailVerified {
                     errorMessage = "Please verify your email before signing in."
                     showAlert = true
                     try? Auth.auth().signOut()
                 } else {
-                    // Successfully signed in
                     isSignedIn = true
                 }
             }
         }
+    }
+}
+
+// Custom error messages
+extension AuthView {
+    func customErrorMessage(for error: Error) -> String {
+        let nsError = error as NSError
+        
+        // Use Firebase's AuthErrorCode to get specific error codes
+        if let errorCode = AuthErrorCode(rawValue: nsError.code) {
+            switch errorCode {
+            case .invalidEmail:
+                return "The email address is badly formatted."
+            case .emailAlreadyInUse:
+                return "The email address is already in use by another account."
+            case .weakPassword:
+                return "The password is too weak. Please choose a stronger password."
+            case .wrongPassword:
+                return "The password you entered is incorrect."
+            case .userNotFound:
+                return "There is no account associated with this email."
+            case .userDisabled:
+                return "This user account has been disabled."
+            case .networkError:
+                return "Network error. Please check your internet connection."
+            case .tooManyRequests:
+                return "Too many requests. Please try again later."
+            case .invalidCredential:
+                return "The supplied credentials are malformed or have expired. Please try again."
+            default:
+                return "An unknown error occurred. Please try again."
+            }
+        }
+        
+        // Return the default error message if it's not a known error code
+        return error.localizedDescription
     }
 }
 
