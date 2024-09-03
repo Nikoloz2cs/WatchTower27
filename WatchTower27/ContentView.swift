@@ -147,12 +147,12 @@ struct MapView: UIViewRepresentable {
                 // Highlight the most recently reported parking lot by setting the markerTintColor to silver
                 if let mostRecentLot = parent.parkingLots.max(by: { $0.recentReports.last ?? Date.distantPast < $1.recentReports.last ?? Date.distantPast }) {
                     if lot == mostRecentLot {
-                        annotationView?.markerTintColor = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
+                        annotationView?.markerTintColor = .green
                     } else {
                         // Set the marker color based on the report count
                         switch lot.reportCount {
                         case 0:
-                            annotationView?.markerTintColor = .green
+                            annotationView?.markerTintColor = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
                         case 1...3:
                             annotationView?.markerTintColor = .yellow
                         case 4...6:
@@ -165,7 +165,7 @@ struct MapView: UIViewRepresentable {
                 
                 // Display the reportCount on pins
                 annotationView?.glyphText = "\(lot.reportCount)"
-                annotationView?.glyphTintColor = .systemPurple
+                annotationView?.glyphTintColor = .black
             }
             
             return annotationView
@@ -291,7 +291,7 @@ struct ContentView: View {
     }
 }
 
-
-#Preview {
-    ContentView()
-}
+//
+//#Preview {
+//    ContentView()
+//}
